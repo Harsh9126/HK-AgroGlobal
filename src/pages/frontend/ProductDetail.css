@@ -1,0 +1,378 @@
+/* Product Detail Page Styles */
+.product-detail-page {
+  padding: 120px 0 100px;
+  background: var(--off-white);
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--primary);
+  transition: transform 0.2s var(--ease);
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+}
+
+.breadcrumb-small {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.breadcrumb-small a:hover {
+  color: var(--primary);
+}
+
+/* Main Grid Layout */
+.product-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+/* Gallery Section */
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-image {
+  position: relative;
+  aspect-ratio: 1 / 0.85;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--gray-100);
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.featured-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.thumbnail-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.thumb-item {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s var(--ease);
+}
+
+.thumb-item.active {
+  border-color: var(--primary);
+}
+
+.thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Info Section */
+.info-header {
+  margin-bottom: 24px;
+}
+
+.info-category {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.info-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.info-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.info-rating .stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+}
+
+.info-price-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 32px;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow-sm);
+}
+
+.price-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price-tag .amount {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.moq-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+
+.product-description {
+  font-size: 1.05rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.quick-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.spec-item svg {
+  color: var(--primary-light);
+  margin-top: 4px;
+}
+
+.spec-item label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 4px;
+}
+
+.spec-item span {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.info-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1.5px solid var(--gray-100);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.qty-selector button {
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  color: var(--gray-500);
+}
+
+.qty-selector input {
+  width: 60px;
+  text-align: center;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+.trust-badges-small {
+  display: flex;
+  gap: 24px;
+}
+
+.trust-b {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gray-400);
+}
+
+.trust-b svg {
+  color: #16a34a;
+}
+
+/* Technical Details Section */
+.product-details-extra {
+  margin-top: 80px;
+}
+
+.details-tabs {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: 32px;
+}
+
+.tab-btn {
+  padding: 16px 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-400);
+  position: relative;
+}
+
+.tab-btn.active {
+  color: var(--primary);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary);
+}
+
+.tab-content {
+  padding: 40px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.specs-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.specs-row {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--off-white);
+}
+
+.specs-label {
+  width: 200px;
+  font-weight: 700;
+  color: var(--gray-500);
+  font-size: 0.9rem;
+}
+
+.specs-value {
+  color: var(--gray-800);
+  font-weight: 500;
+}
+
+.extra-info-box h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.extra-info-box p {
+  color: var(--gray-500);
+  line-height: 1.8;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-main-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .tab-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .info-actions {
+    flex-direction: column;
+  }
+  
+  .qty-selector {
+    justify-content: center;
+  }
+  
+  .price-tag .amount {
+    font-size: 1.8rem;
+  }
+  
+  .info-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,199 @@
+/* Contact Page Styles */
+.contact-page {
+  background: var(--white);
+}
+
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: flex-start;
+  padding: 100px 0;
+}
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-info-panel p {
+  font-size: 1.1rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-method-card {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s var(--ease);
+}
+
+.contact-method-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.cm-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--off-white);
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-method-card:hover .cm-icon {
+  background: var(--primary);
+  color: white;
+}
+
+.cm-text label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 4px;
+}
+
+.cm-text span {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.social-connect h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--gray-700);
+}
+
+.social-row {
+  display: flex;
+  gap: 16px;
+}
+
+.social-row a {
+  width: 44px;
+  height: 44px;
+  background: var(--off-white);
+  color: var(--gray-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s var(--ease);
+}
+
+.social-row a:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Contact Form Panel */
+.contact-form-panel {
+  padding: 48px;
+  background: white;
+}
+
+.form-head {
+  font-size: 1.75rem;
+  margin-bottom: 32px;
+  font-weight: 800;
+}
+
+.form-head span {
+  color: var(--primary);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Map Section */
+.map-wrapper {
+  margin-top: 48px;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+/* Global Clock Section */
+.time-section {
+  padding: 60px 0;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.time-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.time-item svg {
+  width: 40px;
+  height: 40px;
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
+.time-item label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+}
+
+.time-item span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .time-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-methods, .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form-panel {
+    padding: 32px 24px;
+  }
+}

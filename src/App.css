@@ -1,0 +1,49 @@
+/* Global App Transitions & Layout Helpers */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Page Transition Animation */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Global Utility */
+.w-full { width: 100%; }
+
+/* Admin Global Overrides */
+.admin-container .btn-sm {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+}
+
+.badge-pill {
+  white-space: nowrap;
+}
+
+/* Modal Animations */
+.admin-modal-overlay {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.admin-modal {
+  animation: fadeInUp 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
