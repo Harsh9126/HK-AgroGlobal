@@ -328,3 +328,59 @@
 .no-selection p {
   max-width: 280px;
 }
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .manage-inquiries {
+    height: auto;
+  }
+
+  .inquiries-container {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+
+  .inquiry-sidebar {
+    flex: none;
+    max-height: 320px;
+  }
+
+  .inquiry-detail {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .detail-body {
+    padding: 16px;
+  }
+
+  .detail-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reply-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+}

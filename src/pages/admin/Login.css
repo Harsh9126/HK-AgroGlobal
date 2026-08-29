@@ -218,3 +218,15 @@
 .animate-shake {
   animation: shake 0.3s ease-in-out;
 }
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+}

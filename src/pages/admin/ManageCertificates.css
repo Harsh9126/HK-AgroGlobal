@@ -219,3 +219,58 @@
 .view-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 28px; }
 .header-info h2 { font-size: 1.75rem; font-weight: 700; color: #1e293b; margin-bottom: 4px; }
 .header-info p  { color: #64748b; font-size: 0.9rem; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .view-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-form {
+    padding: 16px;
+  }
+
+  .modal-content {
+    max-width: 100%;
+    margin: 0 8px;
+    max-height: 95vh;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-footer button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image-input-wrap {
+    flex-direction: column;
+  }
+
+  .image-preview-mini {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-toast {
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    text-align: center;
+  }
+}

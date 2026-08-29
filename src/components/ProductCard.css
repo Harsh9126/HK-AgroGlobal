@@ -182,3 +182,43 @@
   justify-content: center;
   border-radius: var(--radius-md);
 }
+
+/* Mobile touch optimizations */
+@media (max-width: 640px) {
+  .product-card-img-wrap {
+    height: 180px;
+  }
+
+  .product-card-body {
+    padding: 14px;
+  }
+
+  .product-card-actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .product-card-actions .btn {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  /* Disable hover transform on touch devices */
+  .product-card:hover {
+    transform: none;
+  }
+
+  .product-card:active {
+    transform: scale(0.98);
+  }
+}
+
+@media (max-width: 375px) {
+  .product-card-img-wrap {
+    height: 160px;
+  }
+
+  .amount {
+    font-size: 1.25rem;
+  }
+}

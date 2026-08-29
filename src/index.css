@@ -518,3 +518,32 @@ h1, h2, h3, h4, h5 {
   .container { padding: 0 12px; }
   .btn { min-height: 44px; }
 }
+
+/* ============ SAFE AREA INSETS (Notch/Dynamic Island) ============ */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .navbar {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .whatsapp-float {
+    bottom: calc(28px + env(safe-area-inset-bottom));
+    left: calc(28px + env(safe-area-inset-left));
+  }
+
+  @media (max-width: 480px) {
+    .whatsapp-float {
+      bottom: calc(16px + env(safe-area-inset-bottom));
+      left: calc(16px + env(safe-area-inset-left));
+    }
+  }
+}
+
+/* ============ TOUCH ACTION ============ */
+.btn, a, button, [role="button"] {
+  touch-action: manipulation;
+}
+
+/* ============ MOBILE GRID FIX ============ */
+@media (max-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}

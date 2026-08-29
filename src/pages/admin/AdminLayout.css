@@ -319,10 +319,12 @@
   .admin-sidebar {
     position: fixed;
     left: -280px;
+    z-index: 200;
   }
   
   .admin-sidebar.open {
     left: 0;
+    width: var(--admin-sidebar-width) !important;
   }
   
   .admin-sidebar.closed {
@@ -331,5 +333,59 @@
   
   .mobile-only {
     display: flex;
+  }
+
+  .admin-content-area {
+    padding: 20px 16px;
+  }
+
+  .admin-header {
+    padding: 0 16px;
+  }
+}
+
+/* Mobile overlay backdrop for sidebar */
+.admin-sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 199;
+  backdrop-filter: blur(2px);
+}
+
+.admin-sidebar-overlay.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .admin-content-area {
+    padding: 16px 12px;
+  }
+
+  .user-info {
+    display: none;
+  }
+
+  .header-right {
+    gap: 12px;
+  }
+
+  .admin-header {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-content-area {
+    padding: 12px 8px;
+  }
+
+  .admin-header {
+    padding: 0 8px;
+  }
+  
+  .header-title {
+    font-size: 1rem;
   }
 }
