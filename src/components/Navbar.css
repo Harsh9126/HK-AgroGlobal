@@ -247,7 +247,10 @@
 
 @media (max-width: 1024px) {
   .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+    margin-left: auto; /* push hamburger to far right corner */
+  }
   .nav-inner { gap: 16px; }
 }
 
