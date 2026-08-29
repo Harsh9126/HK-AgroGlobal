@@ -183,7 +183,7 @@ export default function Home() {
               {[
                 { icon: <Shield size={24} />, title: "Secure Logistics", desc: "End-to-end tracking for all international shipments." },
                 { icon: <Zap size={24} />, title: "Rapid Fulfillment", desc: "Efficient processing to ensure product freshness." },
-                { icon: <Globe size={24} />, title: "Global Network", desc: "Distributing to 50+ countries across 5 continents." },
+                { icon: <Globe size={24} />, title: "Global Network", desc: "Distributing to 10+ countries across 5 continents." },
                 { icon: <Truck size={24} />, title: "Cold Storage", desc: "State-of-the-art facilities for perishable exports." }
               ].map((f, i) => (
                 <div key={i} className="feature-small-card">

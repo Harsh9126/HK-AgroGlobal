@@ -57,7 +57,7 @@ export default function Navbar() {
         <div className="container topbar-inner">
           <div className="topbar-left">
             <Globe size={14} />
-            <span>Exporting to 50+ Countries Worldwide</span>
+            <span>Exporting to 10+ Countries Worldwide</span>
           </div>
           <div className="topbar-right">
             <a href="tel:+919999999999">

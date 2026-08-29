@@ -64,7 +64,7 @@ export default function Footer() {
                 </div>
               </Link>
               <p className="footer-tagline">
-                India's premium agro-food exporter, connecting global markets with certified quality products across 50+ countries.
+                India's premium agro-food exporter, connecting global markets with certified quality products across 10+ countries.
               </p>
               <div className="footer-contact-items">
                 <div className="footer-contact-item">

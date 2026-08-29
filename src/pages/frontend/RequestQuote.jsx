@@ -202,7 +202,7 @@ const RequestQuote = () => {
                     <div className="benefit-icon"><Truck size={20} /></div>
                     <div>
                       <h4>Global Logistics</h4>
-                      <p>End-to-end shipping solutions by air, sea, or land to 50+ countries.</p>
+                      <p>End-to-end shipping solutions by air, sea, or land to 10+ countries.</p>
                     </div>
                   </li>
                   <li>
