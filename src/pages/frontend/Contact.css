@@ -188,12 +188,40 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-main-grid {
+    padding: 60px 0;
+    gap: 48px;
+  }
+
+  .contact-form-panel {
+    padding: 32px 24px;
+  }
+
+  .contact-info-panel p {
+    font-size: 1rem;
+  }
+
+  .map-wrapper {
+    margin-top: 32px;
+  }
+}
+
 @media (max-width: 640px) {
   .contact-methods, .form-row {
     grid-template-columns: 1fr;
   }
   
   .contact-form-panel {
-    padding: 32px 24px;
+    padding: 24px 16px;
+  }
+
+  .form-head {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+
+  .contact-method-card {
+    padding: 20px 16px;
   }
 }

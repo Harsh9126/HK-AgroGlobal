@@ -274,8 +274,50 @@
   }
 }
 
+@media (max-width: 768px) {
+  .quote-hero {
+    padding: 60px 0 40px;
+  }
+
+  .quote-hero h1 {
+    font-size: 2rem;
+  }
+
+  .quote-hero p {
+    font-size: 1rem;
+  }
+
+  .quote-form-card {
+    padding: 28px 20px;
+  }
+
+  .info-card,
+  .support-card {
+    padding: 24px;
+  }
+}
+
 @media (max-width: 640px) {
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .quote-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .success-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .success-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .success-actions .btn {
+    width: 100%;
+    justify-content: center;
+    max-width: 280px;
   }
 }

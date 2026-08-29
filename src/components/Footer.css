@@ -213,9 +213,19 @@
   .footer-brand { grid-column: 1 / -1; }
 }
 
+@media (max-width: 768px) {
+  .footer-main { padding: 56px 0 32px; }
+  .footer-cta-band { padding: 48px 0; }
+  .footer-cta-inner h3 { font-size: 1.4rem; }
+}
+
 @media (max-width: 640px) {
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-cta-inner { text-align: center; justify-content: center; }
-  .footer-cta-actions { justify-content: center; }
-  .footer-bottom-inner { flex-direction: column; text-align: center; }
+  .footer-cta-actions { justify-content: center; width: 100%; }
+  .footer-cta-actions .btn { width: 100%; justify-content: center; max-width: 280px; }
+  .footer-bottom-inner { flex-direction: column; text-align: center; gap: 12px; }
+  .footer-bottom-links { gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .footer-main { padding: 48px 0 24px; }
+  .footer-cta-band { padding: 40px 0; }
 }

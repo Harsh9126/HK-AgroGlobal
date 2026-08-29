@@ -264,7 +264,7 @@
   .about-grid, .infra-grid {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 100px;
+    gap: 60px;
   }
   
   .image-stack {
@@ -273,6 +273,87 @@
   }
   
   .check-list {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    padding: 60px 0;
+    gap: 60px;
+  }
+
+  .infra-grid {
+    padding: 60px 0;
+    gap: 48px;
+  }
+
+  .image-stack {
+    height: 340px;
+  }
+
+  .img-sub {
+    bottom: -20px;
+    right: -10px;
+    width: 160px;
+    height: 160px;
+    border-width: 6px;
+  }
+
+  .experience-box {
+    top: 20px;
+    left: -8px;
+    padding: 16px 20px;
+  }
+
+  .exp-num {
+    font-size: 2rem;
+  }
+
+  .stats-mini {
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .value-card {
+    padding: 32px 24px;
+  }
+
+  .cert-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-stack {
+    height: 260px;
+  }
+
+  .img-sub {
+    width: 120px;
+    height: 120px;
+    right: 0;
+    bottom: -10px;
+    border-width: 4px;
+  }
+
+  .experience-box {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 16px auto 0;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  .stats-mini {
+    flex-direction: column;
+    gap: 16px;
     align-items: center;
   }
 }

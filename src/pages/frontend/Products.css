@@ -190,7 +190,7 @@
   position: fixed;
   top: 0;
   right: -320px;
-  width: 320px;
+  width: min(320px, 85vw);
   height: 100%;
   background: white;
   z-index: 1001;

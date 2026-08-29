@@ -160,12 +160,34 @@
 /* Responsive */
 @media (max-width: 768px) {
   .cert-banner-inner {
-    padding: 60px 40px;
+    padding: 48px 28px;
     flex-direction: column;
     text-align: center;
   }
   
   .cert-row {
     justify-content: center;
+  }
+
+  .cert-banner-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .process-item {
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-banner-inner {
+    padding: 36px 20px;
+  }
+
+  .cert-banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .country-card {
+    padding: 16px;
   }
 }

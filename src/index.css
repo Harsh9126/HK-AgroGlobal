@@ -46,6 +46,9 @@
   --nav-height: 80px;
   --section-pad: 100px;
 
+  /* Mobile */
+  --mobile-pad: 16px;
+
   /* Radius */
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -68,6 +71,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -76,13 +81,22 @@ body {
   background: var(--white);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img { max-width: 100%; height: auto; display: block; }
-a { text-decoration: none; color: inherit; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
+a { text-decoration: none; color: inherit; -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 input, textarea, select { font-family: inherit; }
 ul { list-style: none; }
+
+/* Prevent iOS zoom on input focus */
+@media (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+}
 
 /* ============ SCROLLBAR ============ */
 ::-webkit-scrollbar { width: 6px; }
@@ -478,13 +492,29 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 768px) {
-  :root { --section-pad: 60px; }
+  :root { --section-pad: 56px; --nav-height: 68px; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .container { padding: 0 16px; }
+  .section-header { margin-bottom: 40px; }
+  .page-hero { padding: 100px 0 60px; }
+  .page-hero h1 { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+  .page-hero p { font-size: 0.95rem; }
 }
 
 @media (max-width: 480px) {
+  :root { --section-pad: 48px; }
   .grid-4 { grid-template-columns: 1fr; }
-  .btn-lg { padding: 14px 28px; font-size: 0.95rem; }
+  .btn-lg { padding: 14px 24px; font-size: 0.95rem; }
+  .btn { padding: 12px 24px; font-size: 0.9rem; }
+  .section-title { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .section-subtitle { font-size: 0.95rem; }
+  .toast { right: 12px; left: 12px; bottom: 12px; }
+  .whatsapp-float { bottom: 16px; left: 16px; width: 52px; height: 52px; }
+}
+
+@media (max-width: 375px) {
+  :root { --section-pad: 40px; }
+  .container { padding: 0 12px; }
+  .btn { min-height: 44px; }
 }
