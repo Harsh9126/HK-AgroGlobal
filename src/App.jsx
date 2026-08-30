@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import PublicLayout from './components/PublicLayout';
+import ScrollToTop from './components/ScrollToTop';
 
 // Frontend Pages
 import Home from './pages/frontend/Home';
@@ -73,6 +74,7 @@ function App() {
     <ErrorBoundary>
       <AuthProvider>
         <Router>
+          <ScrollToTop />
           <div className="app-wrapper">
             <Routes>
               {/* Public Routes with Navbar and Footer */}
